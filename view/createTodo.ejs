@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <title>Create Todo</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="/CSS/createDesign.css">
+    
+    </head>
+
+    <body>
+
+        <form class="todo-form" action="/create" method="post">
+
+            <h2>Create Todo</h2>
+
+            <div class="form-group">
+                <label for="todoName">Todo Name:</label>
+                <input type="text" id="todoName" name="todoName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="todoDescription">Todo Description:</label>
+                <textarea id="todoDescription" name="todoDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="todoTime">Time:</label>
+                <input type="time" id="todoTime" name="todoTime" required />
+            </div>
+
+            <div class="form-group">
+                <label for="todoDate">Date:</label>
+                <input type="date" id="todoDate" name="todoDate" required />
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </body>
+
+</html>
